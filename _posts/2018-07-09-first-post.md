@@ -1,6 +1,9 @@
 ---
 layout: post
 title: First post!
+subtitle: The very first one
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
 image: /img/hello_world.jpeg
 ---
 
