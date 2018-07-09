@@ -13,8 +13,8 @@ I am interested in quite a lot of things among of which are:
 - **Coding.** If you want to check my code or tutorials go [here](https://github.com/LiberPH).
 - **Reading.** Lately I am becoming quite lazy, but still you can follow me in [goodReads](https://www.goodreads.com/user/show/1938575-libert).
 
-What else do you need?
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### My history
+
+Well, I studied Genomic Sciences and the Phd in biomedical sciences at UNAM. More information coming soon :).
