@@ -78,7 +78,7 @@ social-network-links:
   email: "rtonalli@gmail.com"
 #  facebook: daattali
   github: LiberPH
-  twitter: daattali
+  twitter: LibertadPantoja
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
@@ -102,7 +102,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "liberph.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
