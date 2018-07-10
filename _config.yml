@@ -60,7 +60,8 @@ footer-link-col: "#4CBAFF"
 
 # navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
-page-img: "/img/back3.jpg"
+#page-img: "/img/back3.jpg"
+background-image: url('img/back3.jpg')
 
 # --- Footer options --- #
 
