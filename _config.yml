@@ -48,7 +48,7 @@ avatar: "/img/avatar.png"
 navbar-col: "#0A80FF"
 navbar-text-col: "#FFFFFF"
 navbar-children-col: "#CFE3F9"
-#page-col: "#FFFFFF"
+page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#0A80FF"
@@ -60,7 +60,7 @@ footer-link-col: "#CFE3F9"
 
 # navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
- page-img: "/img/back3.png"
+# page-img: "/img/back3.png"
 
 # --- Footer options --- #
 
