@@ -27,7 +27,7 @@ Well, I studied Genomic Sciences and I have a PhD in Biomedical Sciences at UNAM
 ## My publications
 
 During my grad studies I produced two publications:
+
 | Paper             |  Review |
-:-------------------------:|:-------------------------:
 [![](/img/JTB.png)](https://www.frontiersin.org/articles/10.3389/fbioe.2015.00085/full)  |  [![](img/Frontiers.png)](https://www.sciencedirect.com/science/article/pii/S0022519316302454?via%3Dihub)
 
