@@ -34,6 +34,9 @@ navbar-links:
     - Short stories in Spanish (Alberto Chimal's site): "http://www.lashistorias.com.mx/"
     - Datadog website (Data Science stuff in spanish): "https://datadogmx.github.io/"
     - Multivariate Analysis Erick's notebook: "https://github.com/ErickEduardoAH/AnalisisMultivariado/blob/master/1.1%20-%20Multivariate%20Data%20Sets%20-%20multivariate%20data%20and%20descriptive%20statistics.ipynb"
+    - Learn git: "https://try.github.io/levels/1/challenges/1"
+  Resources:
+    - Crash workshop along with data dog (spanish): "https://github.com/datadogmx/taller_spark"
   Other LPH's pages:
     - LPH's writings: "https://libertadph.wordpress.com/"
     - Magic sucking my spine: "https://magicsuckingmyspine.tumblr.com/"
