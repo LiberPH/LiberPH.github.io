@@ -32,6 +32,7 @@ navbar-links:
   Other LPH's pages:
     - LPH's writings: "https://libertadph.wordpress.com/"
     - Magic sucking my spine: "https://magicsuckingmyspine.tumblr.com/"
+    - Loop: "https://loop.frontiersin.org/people/200142/overview"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -84,7 +85,7 @@ social-network-links:
 #  google-plus: +DeanAttali
 #  linkedin: daattali
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
+  stackoverflow: "1431957/libertad-pantoja"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  youtube: user/deanat78
