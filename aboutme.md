@@ -20,6 +20,14 @@ I am interested in quite a lot of things among of which are:
 
 
 
-### My history
+## My history
 
-Well, I studied Genomic Sciences and the Phd in biomedical sciences at UNAM. More information coming soon :).
+Well, I studied Genomic Sciences and I have a PhD in Biomedical Sciences at UNAM. I've been participating in narrative workshops since 2007.
+
+## My publications
+
+During my grad studies I produced two publications:
+| Paper             |  Review |
+:-------------------------:|:-------------------------:
+[![](/img/JTB.png)](https://www.frontiersin.org/articles/10.3389/fbioe.2015.00085/full)  |  [![](img/Frontiers.png)](https://www.sciencedirect.com/science/article/pii/S0022519316302454?via%3Dihub)
+
