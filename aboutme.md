@@ -26,8 +26,14 @@ Well, I studied Genomic Sciences and I have a PhD in Biomedical Sciences at UNAM
 
 ## My publications
 
-During my grad studies I produced two publications:
+Regarding biological sciences I'm particularly interested in transcriptional regulation. During my grad studies I worked on retroactivity and its relation to transcriptional binding mechanisms (or, quite more clearly, how the way a protein that regulates genes influences its effectivity as regulator). 
+
+During my grad studies I produced two publications in those matters:
 
 | Paper             |  Review |
 [![](/img/JTB.png)](https://www.frontiersin.org/articles/10.3389/fbioe.2015.00085/full)  |  [![](img/Frontiers.png)](https://www.sciencedirect.com/science/article/pii/S0022519316302454?via%3Dihub)
+
+I am also very interested in the effects that drugs may have on patients considering characteristics such as age, genomic context, health, etc. And in the reltionship between transcriptional regulation, modularity and development in cases such as the creation of insect galls in the plant-insect relationship.
+
+## Writing
 
