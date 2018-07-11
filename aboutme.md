@@ -3,6 +3,10 @@ layout: page
 title: About me
 subtitle: A little more about me 
 image: /img/me.png
+use-site-title: true
+css: "/css/index.css"
+bigimg:
+  - "/img/big-imgs/big8.jpg" : "Inside my mind :)"
 ---
 
 Hello! I am writer and a Data Scientist. I love to draw and to hear good stories. Currently I'm working hard to improve my Data Science skills with the aim to use them to gain insights in biological (specially medical) data.
