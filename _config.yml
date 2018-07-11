@@ -24,11 +24,14 @@ description: Data Science, Genomics, Literature and random Stuff from LPH
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+  #Resources:
+  #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+  #  - Learn markdown: "http://www.markdowntutorial.com/"
+  #  - GitHub Pages: "https://pages.github.com/"
   #Author's home: "http://deanattali.com"
+  Suggested sites and links:
+    - Random helpful stuff: "http://www.disturbancesinthewash.net/"
+    - Short stories in Spanish (Alberto Chimal's site): "http://www.lashistorias.com.mx/"
   Other LPH's pages:
     - LPH's writings: "https://libertadph.wordpress.com/"
     - Magic sucking my spine: "https://magicsuckingmyspine.tumblr.com/"
