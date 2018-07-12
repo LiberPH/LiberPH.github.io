@@ -24,7 +24,7 @@ I am interested in quite a lot of things among of which are:
 
 Well, I studied Genomic Sciences and I have a PhD in Biomedical Sciences at UNAM. I've been participating in narrative workshops since 2007.
 
-## My publications
+## My scientific publications
 
 Regarding biological sciences I'm particularly interested in transcriptional regulation. During my grad studies I worked on retroactivity and its relation to transcriptional binding mechanisms (or, quite more clearly, how the way a protein that regulates genes influences its effectivity as regulator). 
 
@@ -35,5 +35,10 @@ During my grad studies I produced two publications in those matters:
 
 I am also very interested in the effects that drugs may have on patients considering characteristics such as age, genomic context, health, etc. And in the reltionship between transcriptional regulation, modularity and development in cases such as the creation of insect galls in the plant-insect relationship.
 
-## Writing
+## Writing (narrative and popular Science)
+
+I have particpated in the writing narrative workshops of [Francisco Rebolledo](http://www.elem.mx/autor/datos/2044), [Alberto Chimal](http://www.lashistorias.com.mx/), [Gabriel Rodríguez Liceaga](http://www.lahojadearena.com/canta-herida-de-gabriel-rodriguez-liceaga/) y [Mario González Suárez](https://es.wikipedia.org/wiki/Mario_Gonz%C3%A1lez_Su%C3%A1rez). 
+
+My only short story published so far is "Foco" which is included in the book "Historias de las historias" by Alberto Chimal.
+I've published sevral narrative popular Science articles in Spanish such as 
 
