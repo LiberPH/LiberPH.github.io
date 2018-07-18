@@ -2,7 +2,7 @@
 layout: post
 title: How to do you website wit git hub hosting using jekyll.
 subtitle: A short go through
-tags: [web-site]
+tags: [web-site, jekyll, github]
 ---
 
 Hosting  a web site in github is fast and easy. 
