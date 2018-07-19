@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to do you website wit git hub hosting using jekyll.
+title: How to do you website with git hub hosting using jekyll.
 subtitle: A short go through
 tags: [web-site, jekyll, github]
 ---
