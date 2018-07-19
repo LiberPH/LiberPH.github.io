@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to do you website with git hub hosting using jekyll.
-subtitle: A short go through
+subtitle: A mini crash go through
 image: /img/logo-2x.png
 tags: [web-site, jekyll, github]
 ---
