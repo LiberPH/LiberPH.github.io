@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Spark's big bug
+title: Spark's annoying bug
 subtitle: 20530 "Cannot evaluate expression" when filtering on parquet partition column 
 tags: [spark,bugs,big data]
 ---
+
+#Saprk's annoying bug
 
 Pain! I've lost almost one week of work (ish, because I've already finished all the stuff I needed to do, the thing is I'm going from samples to work with the real data).
 The thing is, tha partition column of the table that I'm working with is a date, dates usually have an extra problem in pySpark,
