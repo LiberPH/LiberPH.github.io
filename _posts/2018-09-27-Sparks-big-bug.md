@@ -43,10 +43,10 @@ Now, if I define my latest date as previously but casting it to string, make a n
 ```python
 ifrs9_curr_df_a = df.select('*',
                                 c("date_column").cast(StringType()).alias("date_str")
-                                                          )
+                                                          ).select(select_group)
 ifrs9_curr_df = ifrs9_curr_df_a.filter( compare_date_udf("date_str",F.lit(date)) == 1)
 ```
-![error](https://i.stack.imgur.com/x9zOi.png)
+![error](img/error_without_cache.png)
 
 **The problem:** It is a pain in the #$$ to filter the column used for parquet partition
 
