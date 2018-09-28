@@ -8,8 +8,8 @@ tags: [spark,bugs,big data]
 # Spark's annoying bug
 
 Pain! I've lost almost one week of work (ish, because I've already finished all the stuff I needed to do, the thing is I'm going from samples to work with the real data).
-The thing is, tha partition column of the table that I'm working with is a date, dates usually have an extra problem in pySpark,
-because python doesn't like the spark's date format and gets confused with the months of both. Nevertheless, if you want to compare 
+The thing is: the partition column of the table that I'm working with is a date. Dates usually have an inherent problem in pySpark,
+because python doesn't like the spark's date format and gets confused when comparing the months of both. Nevertheless, if you want to compare 
 the full date, everything seems to work fine. For example, in my case I want to use only the latest date from the table. So, if I get 
 the latest date in the following way:
 ```python
@@ -42,7 +42,7 @@ count_date_df = df.groupBy(
 ```
 There is not any problem at all O.o.
 
-So, given Spark and python incompatibilities the "best" way to go is to use a UDF to parse both dates to be compared to strings. I'm going to omit my udf and only show how I declared it like an UDF:
+So, given Spark and python incompatibilities I thought the "best" way to go was to use an UDF to parse both dates to be compared into strings. I'm going to omit my udf that recieves two strings and only show how I declared it like an UDF:
 ```python
 compare_date_udf = F.udf(lambda a,b: compare_date(a,b), IntegerType())
 ```
