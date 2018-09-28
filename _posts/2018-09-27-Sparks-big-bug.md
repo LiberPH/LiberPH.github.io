@@ -38,7 +38,7 @@ So, given Spark and python incompatibilities the "best" way to go is to use a UD
 ```python
 compare_date_udf = F.udf(lambda a,b: compare_date(a,b), IntegerType())
 ```
-Now, if I define my latest date as previously but casting it to string, make a new column with my date casted as well and pass both to the UDF, everything seems fine until I call an action:
+Now, if I define my latest date as previously but casting it to string, make a new column with my date casted as well and pass both to the UDF, everything seems fine until I call an RDD dependent action such as df.count():
 
 ```python
 ifrs9_curr_df_a = df.select('*',
