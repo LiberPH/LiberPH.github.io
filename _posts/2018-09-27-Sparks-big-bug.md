@@ -26,7 +26,13 @@ two for June and one for every other month. So if I try to filter my data like t
 date_cond = (F.year(c("date_column")) == date.timetuple().tm_year) & (F.month(c("date_column")) == date.month)
 ifrs9_df_filtered = df.filter(date_cond)
 ```
-As soon as I proceed to apply an action like *count* or check if the DF *is empty* I get an error message. Thi seems to be happening due to an incompatibility between spark and pyhton's date formats. It seems like this, because, something pretty weird is that this only happens when comparing, if you group data by month and year like this: 
+As soon as I proceed to check if the DF *is empty* or to try to check if it is empty via an assertion (assert (len(df.limit(10).collect()) == 10), "The data frame for this month is Empty"). I get an error message: 
+
+
+![error](/img/error_is_empty_rdd_using_month_and_year.png)
+
+
+This seems to be happening due to an incompatibility between spark and pyhton's date formats. It seems like this, because, something pretty weird is that this only happens when comparing, if you group data by month and year like this: 
 ```python
 count_date_df = df.groupBy(
             F.year(c("date_column")), F.month(c("date_column"))).count().orderBy(
