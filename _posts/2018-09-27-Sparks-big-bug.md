@@ -38,7 +38,7 @@ So, given Spark and python incompatibilities the "best" way to go is to use a UD
 ```python
 compare_date_udf = F.udf(lambda a,b: compare_date(a,b), IntegerType())
 ```
-Now, if I define my latest date as previously but casting it to string, make a new column with my date casted as well and pass both to the UDF, everything seems fine until I call an RDD dependent action such as df.count():
+Now, if I define my latest date as previously -but casting it to string-, make a new column with my date casted as well, and pass both to the UDF, everything seems fine until I call an RDD dependent action such as df.count():
 
 ```python
 ifrs9_curr_df_a = df.select('*',
@@ -48,9 +48,20 @@ ifrs9_curr_df = ifrs9_curr_df_a.filter( compare_date_udf("date_str",F.lit(date))
 ```
 ![error](/img/error_without_cache.png)
 
+In order to solve this problem, given the [Spark's major bug 20530](https://issues.apache.org/jira/browse/SPARK-20530), you need to add a cache after the variables selection (*i.e.* before filtering) as follows: 
+```python
+ifrs9_curr_df_a = df.select('*',
+                                c("date_column").cast(StringType()).alias("date_str")
+                                                          ).select(select_group).cahe()
+ifrs9_curr_df = ifrs9_curr_df_a.filter( compare_date_udf("date_str",F.lit(date)) == 1)
+```
+It will work, however it will make a process that should take 1.3min (using date_cond = c("date_column") == date) to complete last about 3.3hours. It may worth it but it is pretty inefficient.
+
+# So, briefly...
+
 **The problem:** It is a pain in the #$$ to filter the column used for parquet partition
 
 **Why?:** [There is a major bug in Spark](https://issues.apache.org/jira/browse/SPARK-20530)
 
-**How to solve it?**
+**How to solve it?** Using a cache right before applying the filter. It will be pretty slow, though.
 
