@@ -46,7 +46,7 @@ ifrs9_curr_df_a = df.select('*',
                                                           ).select(select_group)
 ifrs9_curr_df = ifrs9_curr_df_a.filter( compare_date_udf("date_str",F.lit(date)) == 1)
 ```
-![error](img/error_without_cache.png)
+![error](/img/error_without_cache.png)
 
 **The problem:** It is a pain in the #$$ to filter the column used for parquet partition
 
