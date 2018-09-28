@@ -46,10 +46,11 @@ ifrs9_curr_df_a = df.select('*',
                                                           )
 ifrs9_curr_df = ifrs9_curr_df_a.filter( compare_date_udf("date_str",F.lit(date)) == 1)
 ```
+![error](https://i.stack.imgur.com/x9zOi.png)
 
 **The problem:** It is a pain in the #$$ to filter the column used for parquet partition
 
-**Why?:** [There is a major bug in Spark] (https://issues.apache.org/jira/browse/SPARK-20530)
+**Why?:** [There is a major bug in Spark](https://issues.apache.org/jira/browse/SPARK-20530)
 
 **How to solve it?**
 
