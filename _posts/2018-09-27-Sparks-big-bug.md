@@ -63,11 +63,28 @@ ifrs9_curr_df = ifrs9_curr_df_a.filter( compare_date_udf("date_str",F.lit(date))
 ```
 It will work, however it will make a process that should take 1.3min (using date_cond = c("date_column") == date) to complete last about 3.3hours. It may worth it but it is pretty inefficient.
 
+**After exhaustive proofreadings and tests all the problem seems to be derived of using an assertion to check if the filtered df is empty:**
+
+´´´python
+def is_empty(df):
+    """
+    Checks if a data frame is empty
+    :param df: Spark data frame
+    :return: None
+    """
+    print("")
+    assert (df.rdd.take(5) ), "The data frame for this month is Empty"
+    #assert (len(df.limit(10).collect()) == 10), "The data frame for this month is Empty"
+    #assert (df.rdd.isEmpty() == False), "The data frame for this month is Empty"
+´´´
+
+**If you avoid doing any of these assertions, all the code may run, even if you use F.year(c("date_column")), F.month(c("date_column")) as the date condition to filter instead of the udf O.o. Moreover, if you use *date_cond = (F.year(c("date_column")) == date.timetuple().tm_year) & (F.month(c("date_column")) == date.month) it is much faster tha passing through the UDF with the cache (1min 20 s vs aprox 3hrs*
+
 # So, briefly...
 
 **The problem:** It is a pain in the #$$ to filter the column used for parquet partition
 
 **Why?:** [There is a major bug in Spark](https://issues.apache.org/jira/browse/SPARK-20530)
 
-**How to solve it?** Using a cache right before applying the filter. It will be pretty slow, though.
+**How to solve it?** Using a cache right before applying the filter. It will be pretty slow, though. So, my advice would be to **avoid doing that assertion and to save a count in a variable and check that it is not zero instead**.
 
