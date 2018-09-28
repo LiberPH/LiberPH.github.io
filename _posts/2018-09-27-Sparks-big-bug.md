@@ -7,6 +7,13 @@ tags: [spark,bugs,big data]
 
 # Spark's annoying bug
 
+Before to start... herea are some imports:
+```python
+import pyspark.sql.functions as F
+from pyspark.sql.functions import col as c
+from pyspark.sql.types import StringType,FloatType, IntegerType
+```
+
 Pain! I've lost almost one week of work (ish, because I've already finished all the stuff I needed to do, the thing is I'm going from samples to work with the real data).
 The thing is: the partition column of the table that I'm working with is a date. Dates usually have an inherent problem in pySpark,
 because python doesn't like the spark's date format and gets confused when comparing the months of both. Nevertheless, if you want to compare 
