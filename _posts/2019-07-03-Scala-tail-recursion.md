@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Pain free tail recursion in Scala
-subtitle: “Tail recursion is its own reward”
+subtitle: an introduction to a great explanation
 tags: [Scala, tail-recursion, recursion]
 ---
 
 I've just strated to study Scala with the aim to develop in Scala Spark. Coming from a Pyspark background 
 (devoted mainly to data science related programming) I've find really hard to catch the notion of tail recursion,
-so I decided to write a post in order to explain it in the easiest a most painless way possible.
+so I decided to write a post in order to explain it in the easiest a most painless way possible. In the way I found a really clear explanation of this made by Alvin Alexander (which I later cite) that I really encourage you to read. Here I will only explain the basics to introduce the explanation beautifully done by him.
 
 I can handle recursion. However, as indicated in the course [Beginning Scala Programming](https://www.udemy.com/beginning-scala-programming/)
 and the really useful post [Tail-Recursive Algorithms in Scala](https://alvinalexander.com/scala/fp-book/tail-recursive-algorithms), by Alvin Alexander,
@@ -25,7 +25,7 @@ level of recursion in other recursive functions.
 
 So... now, it may seems that any function calling itself at the last step is tail recursive, but as shown by alvin Alexander, that may be misleading. He gives an excelent example, with the function:
 
-```Scala
+``` Scala
 def sum(list: List[Int]) : Int = list match{
   case Nil => 0
   case x :: xs => x + sum(xs)
@@ -33,7 +33,7 @@ def sum(list: List[Int]) : Int = list match{
 ``` 
 One way to realize that it is not (or it is) a tail recursive function is by writing each statement one by one, where you can notice that the last thing that happens before returning is the addition of x plus the sum result. Also there a re two ways to detect if your function is tail recursive. The first one is suggested by both Alvin Alexander and the Beginning Scala course: using the annotation @tailrec as follows.
 
-```Scala
+``` Scala
 import scala.annotation._
   def estimatePiTail(n: Int): Double = {
     @tailrec
@@ -48,6 +48,8 @@ import scala.annotation._
   }
 ```
 The previous function is the tail recursive version of pi calculation. If the function was not tail recursive an error message "recursive call not in tal position" would be shown.
+
+As I don't want to plagiarize what Alvin Alexander has explained so well I suggest you to go to his cite to get a recipe on how to write your very own tail recursive functions.
 
 
 # Resources:
