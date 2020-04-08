@@ -24,6 +24,7 @@ description: Data Science, Genomics, Literature and random Stuff from LPH
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Club de Lectura: "clubdelectura"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
