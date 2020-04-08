@@ -20,7 +20,7 @@ La idea es pasar un buen rato platicando nuestras impresiones e inquietudes en t
 
 ## Dinámica propuesta
 
-Cada semana se propondrán de 1 a 5 textos (pueden ser más en caso de que sean ensayos cortos, cuentos cortos o minificciones) para que discutamos y compartamos nuestras impresiones y datos curiosos al respecto. La idea es acompañrnos y pasar un buen rato. Parte de la idea inicial es proporcionar un tip de redacción antes de empezar con la sesión. Esto se someterá a votación en la primera sesión. Idealmente una sesión tendrá una duración de no más de una hora.
+Cada semana se propondrán de 1 a 5 textos (pueden ser más en caso de que sean ensayos cortos, cuentos cortos o minificciones) para que discutamos y compartamos nuestras impresiones y datos curiosos al respecto. La idea es acompañarnos y pasar un buen rato. Parte de la idea inicial es proporcionar un tip de redacción antes de empezar con la sesión. Esto se someterá a votación en la primera sesión. Idealmente una sesión tendrá una duración de no más de una hora.
 
 
 ## Sesión 0: Presentación
